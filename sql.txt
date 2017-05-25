@@ -1,0 +1,13 @@
+CREATE DATABASE `teste`;
+
+CREATE TABLE `teste`.`usuarios` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `tipo` INT NOT NULL COMMENT '1 - Administrador \n2 - Usuário',
+  `nome` VARCHAR(45) NOT NULL,
+  `login` VARCHAR(45) NOT NULL,
+  `senha` CHAR(40) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `login_UNIQUE` (`login`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `teste`.`usuarios` (`tipo`, `nome`, `login`, `senha`) VALUES ('1', 'Administrador', 'admin', '40bd001563085fc35165329ea1ff5c5ecbdbbeef');

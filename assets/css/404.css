@@ -1,0 +1,23 @@
+body,span{
+	font: normal normal 14px/100% Verdana, Arial, Helvetica, sans-serif;
+}
+span{
+	color:#777;
+}
+a{
+	color:#12C;
+}
+a:link,a:visited,a:active{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+div{
+	position: absolute;
+	max-width: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	word-wrap:break-word;
+}
